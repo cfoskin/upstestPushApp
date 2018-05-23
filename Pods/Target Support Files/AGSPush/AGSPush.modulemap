@@ -1,0 +1,6 @@
+framework module AGSPush {
+  umbrella header "AGSPush-umbrella.h"
+
+  export *
+  module * { export * }
+}

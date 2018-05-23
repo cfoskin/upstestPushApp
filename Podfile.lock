@@ -1,0 +1,37 @@
+PODS:
+  - AGSCore (0.2.2):
+    - Alamofire (~> 4.0)
+    - XCGLogger (~> 6.0)
+  - AGSPush (0.2.2):
+    - AGSCore (= 0.2.2)
+  - Alamofire (4.7.2)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - AGSCore
+  - AGSPush
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AGSCore
+    - AGSPush
+    - Alamofire
+    - ObjcExceptionBridging
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  AGSCore: e904d52de94f2d5be3a5f57182359cadfc9466de
+  AGSPush: 63c116ea81394c4eeec3454a656b1252c37402b1
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
+
+PODFILE CHECKSUM: d96648b95b61ae82ed9ba1239fed78304e7c7fa3
+
+COCOAPODS: 1.5.2

@@ -14,6 +14,9 @@
 		60BFA00F20B2B717002AF2FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BFA00D20B2B717002AF2FD /* LaunchScreen.storyboard */; };
 		60BFA01A20B2B717002AF2FD /* upsTestPushAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BFA01920B2B717002AF2FD /* upsTestPushAppTests.swift */; };
 		60BFA02520B2B717002AF2FD /* upsTestPushAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BFA02420B2B717002AF2FD /* upsTestPushAppUITests.swift */; };
+		60BFA03320B2DA36002AF2FD /* mobile-services.json in Resources */ = {isa = PBXBuildFile; fileRef = 60BFA03220B2DA36002AF2FD /* mobile-services.json */; };
+		60D8FE4120B4187900FD1D12 /* PushHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8FE4020B4187900FD1D12 /* PushHelper.swift */; };
+		F926790A8CA8527DC7EB1F10 /* Pods_upsTestPushApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D20D3E5F914BAD59540843 /* Pods_upsTestPushApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4830A12082A849CCAA074CDF /* Pods-upsTestPushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upsTestPushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-upsTestPushApp/Pods-upsTestPushApp.release.xcconfig"; sourceTree = "<group>"; };
+		6008D6AB20B46941001F57F7 /* upsTestPushApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = upsTestPushApp.entitlements; sourceTree = "<group>"; };
 		60BFA00120B2B716002AF2FD /* upsTestPushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = upsTestPushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BFA00420B2B716002AF2FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60BFA00620B2B716002AF2FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,10 @@
 		60BFA02020B2B717002AF2FD /* upsTestPushAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = upsTestPushAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BFA02420B2B717002AF2FD /* upsTestPushAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upsTestPushAppUITests.swift; sourceTree = "<group>"; };
 		60BFA02620B2B717002AF2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BFA03220B2DA36002AF2FD /* mobile-services.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "mobile-services.json"; sourceTree = "<group>"; };
+		60D8FE4020B4187900FD1D12 /* PushHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushHelper.swift; sourceTree = "<group>"; };
+		73C084C258E9B3468AB7A3F2 /* Pods-upsTestPushApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upsTestPushApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-upsTestPushApp/Pods-upsTestPushApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C7D20D3E5F914BAD59540843 /* Pods_upsTestPushApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_upsTestPushApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F926790A8CA8527DC7EB1F10 /* Pods_upsTestPushApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F985AE21F324F694F603EAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D20D3E5F914BAD59540843 /* Pods_upsTestPushApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60BF9FF820B2B716002AF2FD = {
 			isa = PBXGroup;
 			children = (
+				60BFA03220B2DA36002AF2FD /* mobile-services.json */,
 				60BFA00320B2B716002AF2FD /* upsTestPushApp */,
 				60BFA01820B2B717002AF2FD /* upsTestPushAppTests */,
 				60BFA02320B2B717002AF2FD /* upsTestPushAppUITests */,
 				60BFA00220B2B716002AF2FD /* Products */,
+				7E3E9B3D0A640CF9702DF300 /* Pods */,
+				4F985AE21F324F694F603EAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +118,14 @@
 		60BFA00320B2B716002AF2FD /* upsTestPushApp */ = {
 			isa = PBXGroup;
 			children = (
+				6008D6AB20B46941001F57F7 /* upsTestPushApp.entitlements */,
 				60BFA00420B2B716002AF2FD /* AppDelegate.swift */,
 				60BFA00620B2B716002AF2FD /* ViewController.swift */,
 				60BFA00820B2B716002AF2FD /* Main.storyboard */,
 				60BFA00B20B2B717002AF2FD /* Assets.xcassets */,
 				60BFA00D20B2B717002AF2FD /* LaunchScreen.storyboard */,
 				60BFA01020B2B717002AF2FD /* Info.plist */,
+				60D8FE4020B4187900FD1D12 /* PushHelper.swift */,
 			);
 			path = upsTestPushApp;
 			sourceTree = "<group>";
@@ -125,6 +148,15 @@
 			path = upsTestPushAppUITests;
 			sourceTree = "<group>";
 		};
+		7E3E9B3D0A640CF9702DF300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73C084C258E9B3468AB7A3F2 /* Pods-upsTestPushApp.debug.xcconfig */,
+				4830A12082A849CCAA074CDF /* Pods-upsTestPushApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60BFA02920B2B717002AF2FD /* Build configuration list for PBXNativeTarget "upsTestPushApp" */;
 			buildPhases = (
+				1052C1858BF46C914F57FB57 /* [CP] Check Pods Manifest.lock */,
 				60BF9FFD20B2B716002AF2FD /* Sources */,
 				60BF9FFE20B2B716002AF2FD /* Frameworks */,
 				60BF9FFF20B2B716002AF2FD /* Resources */,
+				CA907B0FAF1DCCF19201DE58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +227,11 @@
 				TargetAttributes = {
 					60BFA00020B2B716002AF2FD = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					60BFA01420B2B717002AF2FD = {
 						CreatedOnToolsVersion = 9.3;
@@ -230,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60BFA00F20B2B717002AF2FD /* LaunchScreen.storyboard in Resources */,
+				60BFA03320B2DA36002AF2FD /* mobile-services.json in Resources */,
 				60BFA00C20B2B717002AF2FD /* Assets.xcassets in Resources */,
 				60BFA00A20B2B716002AF2FD /* Main.storyboard in Resources */,
 			);
@@ -251,11 +291,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1052C1858BF46C914F57FB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-upsTestPushApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA907B0FAF1DCCF19201DE58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-upsTestPushApp/Pods-upsTestPushApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AGSCore/AGSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AGSPush/AGSPush.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGSPush.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-upsTestPushApp/Pods-upsTestPushApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60BF9FFD20B2B716002AF2FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D8FE4120B4187900FD1D12 /* PushHelper.swift in Sources */,
 				60BFA00720B2B716002AF2FD /* ViewController.swift in Sources */,
 				60BFA00520B2B716002AF2FD /* AppDelegate.swift in Sources */,
 			);
@@ -428,16 +516,22 @@
 		};
 		60BFA02A20B2B717002AF2FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C084C258E9B3468AB7A3F2 /* Pods-upsTestPushApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = upsTestPushApp/upsTestPushApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GHPBX39444;
 				INFOPLIST_FILE = upsTestPushApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cfoskin.redhat.upsTestPushApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.aerogear.helloworldpush.testing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,16 +539,22 @@
 		};
 		60BFA02B20B2B717002AF2FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4830A12082A849CCAA074CDF /* Pods-upsTestPushApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = upsTestPushApp/upsTestPushApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GHPBX39444;
 				INFOPLIST_FILE = upsTestPushApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cfoskin.redhat.upsTestPushApp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.aerogear.helloworldpush.testing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

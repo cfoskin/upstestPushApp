@@ -1,0 +1,29 @@
+
+{
+  "version": 1,
+  "clusterName": "https://192.168.37.1:8443",
+  "namespace": "ups-test",
+  "clientId": "myapp-ios",
+  "services": [
+  {
+			"id": "push",
+			"name": "push",
+			"type": "push",
+			"url": "https://ups-ups-test.10.201.82.45.nip.io",
+			"config": {
+				"ios": {
+					"variantId": "c6765a03-c908-465e-81a9-be08c9ea0241",
+					"variantSecret": "0279a104-5cf4-4aec-b660-63e5772c2f7e"
+				}
+			}
+		},
+    {
+      "id": "metrics",
+      "name": "metrics",
+      "type": "metrics",
+      "url": "https://www.mocky.io/v2/5aa696133100001335e716e0",
+      "config": {}
+    }
+  ]
+}
+
